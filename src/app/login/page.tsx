@@ -1,6 +1,7 @@
 'use client';
 
 import React, { FC } from "react";
+import { useRouter } from 'next/navigation'
 
 import InputUI from "@/components/ui/InputUI/InputUI";
 import ButtonUI from "@/components/ui/ButtonUI/ButtonUI";
@@ -9,6 +10,8 @@ import SocialButtonUI from "@/components/ui/SocialButtonUI/SocialButtonUI";
 import "./loginPage.scss";
 
 const LoginPage: FC = () => {
+
+  const router = useRouter();
 
   return (
     <div className="login-page h-screen w-full flex justify-center items-center">
@@ -28,7 +31,7 @@ const LoginPage: FC = () => {
               placeholder="Введите адрес электронной почты"
             />
             <InputUI type="password" placeholder="Введите пароль" />
-            <ButtonUI text="Продолжить" onClick={(e) => console.log(1) } />
+            <ButtonUI text="Продолжить" onClick={(e) => router.push('/dashboard', { scroll: false }) } />
           </div>
           <div>
             <p className="text-[#172b4d] text-center mb-3 text-sm ">

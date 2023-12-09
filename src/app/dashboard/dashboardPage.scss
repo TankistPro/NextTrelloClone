@@ -1,0 +1,21 @@
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: hsla(211,18%,68%,0.16);
+}
+
+.wrapper {
+    width: 80%;
+    display: flex;
+
+    .section-render {
+        width: 100%;
+        padding: 0 20px;
+    }
+}

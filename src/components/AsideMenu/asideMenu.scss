@@ -1,0 +1,39 @@
+.aside {
+    max-width: 256px;
+    width: 256px;
+    flex-shrink: 0;
+    
+    .aside-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .aside-link {
+        cursor: pointer;
+        padding: 6px 8px;
+        min-height: 20px;
+        display: block;
+        transition: .2s all;
+        border-radius: 4px;
+        font-weight: bold;
+
+        p {
+           font-size: 0.875rem;
+           color: #b6c2cf;
+        }
+
+        &:hover {
+            transition: .2s all;
+            background-color: #A6C5E229;
+        }
+
+        &.active {
+            background-color: #1C2B41;
+
+             p{
+                color: #579DFF;
+             }
+        }
+    }
+}
